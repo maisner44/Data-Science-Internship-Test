@@ -1,17 +1,18 @@
 ## Description of the Work
 
 **Preprocessing**  
-   - Dataset was downloaded form kaggle in the directory 'data/' contains multiple subfolders, each corresponding to a Sentinel-2 
+Dataset was downloaded form kaggle in the directory 'data/' contains multiple subfolders, each corresponding to a Sentinel-2 
 
 **Model Architecture**  
-   - **Feature Extractor** CNN transforms each patch into a descriptor vector.  
-   - **Siamese Head** compares two embeddings (e.g., via absolute difference) and outputs a smaller feature.
+**Feature Extractor** CNN transforms each patch into a descriptor vector.  
+**Siamese Head** compares two embeddings (e.g., via absolute difference) and outputs a smaller feature.
 
 **Training**  
-   - During training, a loss function (e.g., MSE or contrastive) encourages similar patches to have similar embeddings.
+During training, a loss function (e.g., MSE or contrastive) encourages similar patches to have similar embeddings.
 
 **Inference**  
-   - Loads the trained model, processes two patches, and returns a distance measure indicating similarity.
+Loads the trained model, processes two patches, and returns a distance measure indicating similarity.
+
 
 1. How to Run train.py
 
